@@ -20,7 +20,7 @@ const LoginPage = () => {
       })
       .catch((error) => {
         console.error('Error logging in:', error);
-        // Handle error, e.g., show an error message
+      
       });
   };
 
