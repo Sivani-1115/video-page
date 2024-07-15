@@ -9,16 +9,14 @@ const initialState = {
 };
 
 export const courseListReducer = (state = initialState, action) => {
-  // Reducer logic for course list
+  
 };
 
 export const courseDetailsReducer = (state = initialState, action) => {
-  // Reducer logic for course details
+  
 };
 
 export const courseReviewCreateReducer = (state = initialState, action) => {
-  // Reducer logic for creating course reviews
+  
 };
 
-// Optionally, you might use combineReducers to combine these reducers
-// if they operate on different parts of the state.
