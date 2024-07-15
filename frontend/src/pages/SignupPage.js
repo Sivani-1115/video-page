@@ -21,7 +21,7 @@ const SignupPage = () => {
       })
       .catch((error) => {
         console.error('Error signing up:', error);
-        // Handle error, e.g., show an error message
+        
       });
   };
 
