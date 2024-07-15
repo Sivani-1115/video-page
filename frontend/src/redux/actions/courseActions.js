@@ -8,7 +8,7 @@ import {
   DELETE_COURSE 
 } from '../constants/courseConstants';
 
-// Get all courses
+
 export const getCourses = () => async dispatch => {
   try {
     const res = await axios.get('/api/courses');
@@ -25,7 +25,7 @@ export const getCourses = () => async dispatch => {
   }
 };
 
-// Get course by ID
+
 export const getCourse = id => async dispatch => {
   try {
     const res = await axios.get(`/api/courses/${id}`);
@@ -42,7 +42,7 @@ export const getCourse = id => async dispatch => {
   }
 };
 
-// Update course
+
 export const updateCourse = (id, formData) => async dispatch => {
   const config = {
     headers: {
@@ -65,7 +65,7 @@ export const updateCourse = (id, formData) => async dispatch => {
   }
 };
 
-// Delete course
+
 export const deleteCourse = id => async dispatch => {
   try {
     await axios.delete(`/api/courses/${id}`);
