@@ -34,8 +34,7 @@ export const addReview = (courseId, reviewData) => async dispatch => {
       payload: res.data
     });
 
-    // Optionally, you may want to dispatch `getReviews()` here to update the list after adding a review
-    // dispatch(getReviews());
+
   } catch (err) {
     dispatch({
       type: ADD_REVIEW_FAIL
