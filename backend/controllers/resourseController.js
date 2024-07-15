@@ -1,7 +1,7 @@
 // controllers/resourceController.js
 const Resource = require('../models/Resource');
 
-// Get resources for a course
+
 exports.getResources = async (req, res) => {
     try {
         const resources = await Resource.find({ course: req.params.courseId });
@@ -11,7 +11,7 @@ exports.getResources = async (req, res) => {
     }
 };
 
-// Add a new resource
+
 exports.addResource = async (req, res) => {
     try {
         const { courseId, title, url } = req.body;
