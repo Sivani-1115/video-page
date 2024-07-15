@@ -1,7 +1,7 @@
 // controllers/courseController.js
 const Course = require('../models/Course');
 
-// Get course details
+
 exports.getCourse = async (req, res) => {
     try {
         const course = await Course.findById(req.params.id).populate('instructor');
@@ -14,7 +14,7 @@ exports.getCourse = async (req, res) => {
     }
 };
 
-// Add a new course
+
 exports.addCourse = async (req, res) => {
     try {
         const { title, description, instructor, videoUrl, resources } = req.body;
