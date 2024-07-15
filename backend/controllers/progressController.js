@@ -1,7 +1,7 @@
-// controllers/progressController.js
+
 const Progress = require('../models/Progress');
 
-// Update progress
+
 exports.updateProgress = async (req, res) => {
     try {
         const { courseId, userId, progress } = req.body;
@@ -16,7 +16,7 @@ exports.updateProgress = async (req, res) => {
     }
 };
 
-// Get user progress for a course
+
 exports.getProgress = async (req, res) => {
     try {
         const { courseId, userId } = req.params;
