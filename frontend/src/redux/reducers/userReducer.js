@@ -25,7 +25,7 @@ export const userLoginReducer = (state = initialState, action) => {
 
 export const userRegisterReducer = (state = {}, action) => {
   switch (action.type) {
-    // Define cases for user registration actions if applicable
+    
     default:
       return state;
   }
@@ -33,7 +33,7 @@ export const userRegisterReducer = (state = {}, action) => {
 
 export const userDetailsReducer = (state = {}, action) => {
   switch (action.type) {
-    // Define cases for user details actions if applicable
+    
     default:
       return state;
   }
