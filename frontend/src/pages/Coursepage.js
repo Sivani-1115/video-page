@@ -11,7 +11,7 @@ const CoursePage = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Function to fetch course details
+   
     const fetchCourse = async () => {
       try {
         const response = await fetch(`/api/courses/${courseId}`);
@@ -29,7 +29,7 @@ const CoursePage = () => {
 
     fetchCourse();
 
-    // Decode JWT to get user details
+   
     const token = localStorage.getItem('token');
     if (token) {
       setUser(jwtDecode(token));
