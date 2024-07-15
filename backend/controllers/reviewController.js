@@ -1,7 +1,7 @@
 // controllers/reviewController.js
 const Review = require('../models/Review');
 
-// Add a review
+
 exports.addReview = async (req, res) => {
     try {
         const { courseId, userId, rating, comment } = req.body;
@@ -13,7 +13,7 @@ exports.addReview = async (req, res) => {
     }
 };
 
-// Get reviews for a course
+
 exports.getReviews = async (req, res) => {
     try {
         const reviews = await Review.find({ course: req.params.courseId }).populate('user');
