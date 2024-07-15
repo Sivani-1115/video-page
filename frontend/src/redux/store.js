@@ -8,7 +8,7 @@ const reducer = combineReducers({
   courseDetails: courseDetailsReducer,
   courseReviewCreate: courseReviewCreateReducer,
 
-  // Add other reducers here as needed
+ 
 });
 
 const initialState = {};
